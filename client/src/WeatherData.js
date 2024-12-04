@@ -66,18 +66,6 @@ function WeatherData() {
     <div>
       <h2>WeatherData</h2>
       {error && <p style={{ color: "red" }}>{error}</p>} {}
-      {/* <ul>
-        {weatherData.length === 0 ? (
-          <p>Loading data...</p>
-        ) : (
-          weatherData.map((data, index) => (
-            <li key={index}>
-              {data.city}: {data.temperature}°C, {data.rain} mm rain,{" "}
-              {data.wind} m/s wind
-            </li>
-          ))
-        )}
-      </ul> */}
       {weatherData.length > 0 && (
         <Chart
           chartType="ComboChart"

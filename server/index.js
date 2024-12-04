@@ -65,10 +65,9 @@ function getData() {
 //Get the data, the first time without delay
 getData();
 
-//Get the data every 15 minute
+//Get the data every 5 minute
 //link: https://www.npmjs.com/package/node-cron
-cron.schedule("*/5 * * * *", () => {
-  //running every 10 seconds
+cron.schedule("*/1 * * * *", () => {
   getData();
   console.log("Added new data");
 });
